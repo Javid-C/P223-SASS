@@ -1,0 +1,66 @@
+@import "./extends/extend";
+@import "./mixins/mixins";
+@import "./variables/variables";
+.box {
+    width: 200px;
+    height: 200px;
+    .title {
+        @extend .box;
+        color: $secondary-color;
+        .sub-title {
+            color: chocolate;
+            div {
+                color: $primary-color;
+            }
+            .end-title {
+                // color: blue;
+            }
+        }
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.success {
+    @extend %box;
+    background-color: green;
+    border: greenyellow 2px solid;
+    &:hover {
+        background-color: blue;
+    }
+}
+
+.error {
+    // @extend %box;
+    background-color: red;
+    border: brown 2px solid;
+}
+
+.end-title {
+    color: greenyellow;
+}
+
+.wrapper {
+    &__text {
+        &__success {
+            &__title {
+                color: chocolate;
+            }
+        }
+    }
+}
+
+.flex-box {
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+    .item {
+        color: white;
+        @include flexbox(flex-end, center);
+    }
+}

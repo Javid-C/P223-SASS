@@ -1,0 +1,85 @@
+.success {
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box, .box .title {
+  width: 200px;
+  height: 200px;
+}
+
+.box .title {
+  color: red;
+}
+
+.box .title .sub-title {
+  color: chocolate;
+}
+
+.box .title .sub-title div {
+  color: blue;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.success {
+  background-color: green;
+  border: greenyellow 2px solid;
+}
+
+.success:hover {
+  background-color: blue;
+}
+
+.error {
+  background-color: red;
+  border: brown 2px solid;
+}
+
+.end-title {
+  color: greenyellow;
+}
+
+.wrapper__text__success__title {
+  color: chocolate;
+}
+
+.flex-box {
+  width: 100px;
+  height: 100px;
+  background-color: chocolate;
+}
+
+.flex-box .item {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+/*# sourceMappingURL=main.css.map */

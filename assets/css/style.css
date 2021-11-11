@@ -1,0 +1,23 @@
+.education-card {
+    transition: .3s;
+}
+
+.education-card:hover {
+    transform: scale(1.1);
+    background-color: orange;
+    color: white;
+}
+
+.education-card:hover path {
+    stroke: white;
+}
+
+.more i {
+    font-size: 11px;
+    transition: .2s;
+}
+
+.more:hover i {
+    transform: translateX(20px);
+    color: orange;
+}
